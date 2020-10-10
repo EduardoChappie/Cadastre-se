@@ -5,4 +5,7 @@ const db = low(adapter)
 
 db.defaults({
 	usuarios: []
-})
+}).write()
+
+
+module.exports = db

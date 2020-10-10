@@ -5,9 +5,6 @@ const lowdb = require("./database/server")
 
 const app = express()
 
-// Configuração do "Servidor"/"DataBase"/Banco de Dados
-app.use(lowdb)
-
 //Configuração do BodyParser
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
